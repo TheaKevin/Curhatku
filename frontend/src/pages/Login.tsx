@@ -20,7 +20,7 @@ export const Login = () => {
         })
         .then(res => {
             if(res.data.message === "success"){
-                alertWrongInput.classList.add("d-none");
+                alertWrongInput?.classList.add("d-none");
                 // localStorage.setItem("info", "true")
                 // localStorage.setItem("username", res.data.user.username)
                 // localStorage.setItem("email", res.data.user.email)
@@ -29,7 +29,7 @@ export const Login = () => {
         })
         .catch(err => {
             console.log(err)
-            alertWrongInput.classList.remove("d-none");
+            alertWrongInput?.classList.remove("d-none");
         })
     }
 
