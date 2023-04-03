@@ -21,9 +21,6 @@ export const Login = () => {
         .then(res => {
             if(res.data.message === "success"){
                 alertWrongInput?.classList.add("d-none");
-                // localStorage.setItem("info", "true")
-                // localStorage.setItem("username", res.data.user.username)
-                // localStorage.setItem("email", res.data.user.email)
                 window.location.href = "/"
             }
         })
